@@ -1,0 +1,74 @@
+<?php 
+  // . buat fungsi yang bertujuan untuk mengembalikan nilai reverse string : sebagai contoh :
+  // input parameter : “Indonesia Raya” output yang diharapkan : “ayaR aisenodnI” 
+ function namava($ind) {
+    return strrev($ind);
+  }
+  
+  $indonesia = "Indonesia Raya";
+  $output = namava($indonesia);
+  echo $output;
+  
+
+
+  // segitiga siku siku
+  /*function luassegitiga($alas,$tinggi){
+    return $alas * $tinggi / 2;
+  }
+  
+  $alas = 20;
+  $tinggi = 10;
+  $samadengan = luassegitiga($alas,$tinggi);
+  echo($samadengan)*/
+
+  // buat fungsi yang bertujuan untuk mencari nilai terbesar dalam sebuah array
+
+  /*$nilaiterbesar = [30,10,5,70,20];
+
+  function temukanbesar($besar){
+    return max($besar);
+  } 
+
+  $hasil = temukanbesar($nilaiterbesar);
+  echo($hasil)*/
+
+  // buat fungsi yang bertujuan untuk menampilkan nilai ganjil dalam sebuah array
+
+  //$bilanganganjil = [100,101,20,30,21,15,2,4,6];
+
+$ganjil = [10,20,5,3,13,2,4];
+
+foreach($ganjil as $bilangan){
+  if($bilangan % 2 == 0){
+    echo "$bilangan Merupakan bilangan genap\n";
+  } else {
+    echo "$bilangan Merupakan bilangan ganjil \n";
+  }
+  
+}
+
+  /*function fibonacci($n) {
+    $fib = [0, 1];
+    for ($i = 2; $i < $n; $i++) {
+        $fib[$i] = $fib[$i-1] + $fib[$i-2];
+    }
+    return $fib;
+}
+
+// Contoh penggunaan fungsi
+$hasil = fibonacci(10);
+foreach ($hasil as $bil) {
+    echo "$bil ";
+}
+
+function keduaarray($nama1, $nama2){
+  return $nama1 + $nama2;
+}
+
+$nama1 = [1,2,3,4,5];
+$nama2 = [6,7,8,9,10];
+$gabung = keduaarray($nama1,$nama2);
+print_r($gabung)
+  
+
+?>
